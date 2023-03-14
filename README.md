@@ -21,13 +21,16 @@ It worked!
 
 
 
-#Assignment 2: bank.py
-
-# Create a program named bank.py
-a.-The program will prompt the user and read in two money amounts (in cent). b.-Add the two amounts. c.-Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount. 
+# Assignment 2: Create a program named bank.py
+a.-The program will prompt the user and read in two money amounts (in cent). 
+b.-Add the two amounts.
+c.-Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount. 
 I assigned n_1 to the first amount (65) and n_2 to the second amount (180). 
 In order to make it prompt I used the function input() and put between quotation marks "amount 1: " and "amount 2: " respectively that will propmt to introduce the amounts. It was necessary to leave a space after the two points to have a space between the number and the two points once we introduce the number.
 I was looking for a way to show the word "cents" after adding the amount but it didn't work, I decided to add a new command print print(f'{n_1} cent') after input. In this task I also decided to use the f-string, I believe this makes the syntax more elegant than using print(int(n_1), 'cent')
 Because 1€ is 100 cents. We would just need to add n_1+n_2 and divide by 100. 
 
+## Author
+
+- [@yimak](https://www.github.com/yimak)
 
