@@ -1,3 +1,7 @@
+
+# Hi, I'm Issam C.! 👋
+
+
 # pands-problem-sheet
 The first assignment is straight forward, but will use it to get familiar with Github and using a markup. After doing some reasearch I decided to go with readme **readme.so** Readme is a software easy to use, it offers all kind options when explaining an assignment and we can see the final document at the same time that we are writing our notes.
 
