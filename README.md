@@ -58,7 +58,8 @@ Now we will create a variable that will define the date:
 today = date.today()
 
 I decided to use if -else statement combined with the boolean operator 'OR', so I included the 5 days of the week in the if statement next to the variable today and the == operator, that means that today's date will be True whenever the date assigns one of the days that go from Monday to Friday. 
-To define that it can be only one of these days I added the operator OR. 
+To define that it can be only one of these days I added the boolean operator OR:
+https://realpython.com/python-or-operator/#:~:text=In%20short%2C%20the%20Python%20or,regardless%20of%20its%20truth%20value.&text=In%20this%20example%2C%20the%20Python,how%20or%20works%20in%20Python.
 Then we added print() right after, that means that if any of these values is True, then the string that contains 'Yes, unfortunately today is a weekday.' will be printed.
 Otherwise, if all these values are False, then we would jump to -else statement, which could be Saturday or Sunday, we don't need to define those as we already defined the days Monday to Friday and any value that does not correspond to these will print the string 'It is the weekend, yay!'
 
