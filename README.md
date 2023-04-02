@@ -58,9 +58,10 @@ https://www.programiz.com/python-programming/datetime/current-datetime
 Now we will create a variable that will define the date:
 today = date.today()
 
-I decided to use if -else statement combined with the boolean operator 'OR', so I included the 5 days of the week in the if statement next to the variable today and the == operator, that means that each time the day of the week 
-To define that it can be any of these days I added the operator OR. Then we added print() right after, that means that if it's any of these values is True, then the string 'Yes, unfortunately today is a weekday.' will be printed.
-Otherwise, if all these values are False, then we would jump to -else statement, which could be for Saturday or Sunday, we don't need to define those as we already defined the days Monday to Friday and any value that does not correspond to these will print the string 'It is the weekend, yay!'
+I decided to use if -else statement combined with the boolean operator 'OR', so I included the 5 days of the week in the if statement next to the variable today and the == operator, that means that today's date will be True whenever the date assigns one of the days that go from Monday to Friday. 
+To define that it can be only one of these days I added the operator OR. 
+Then we added print() right after, that means that if any of these values is True, then the string that contains 'Yes, unfortunately today is a weekday.' will be printed.
+Otherwise, if all these values are False, then we would jump to -else statement, which could be Saturday or Sunday, we don't need to define those as we already defined the days Monday to Friday and any value that does not correspond to these will print the string 'It is the weekend, yay!'
 
 
 ## Author
