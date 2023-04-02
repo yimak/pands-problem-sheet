@@ -42,9 +42,8 @@ Because 1€ is 100 cents. We would just need to add n_1+n_2 and divide by 100.
 
 
 
-#Assignment 5: weekday.py
 
-# Create a program named weekday.py 
+# Assignment 5: Create a program named weekday.py 
 Write a program that outputs whether or not today is a weekday.
 If weekday, program will output 'Yes, unfortunately today is a weekday.'
 If weekend, program will output 'It is the weekend, yay!'
