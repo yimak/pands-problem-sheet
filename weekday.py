@@ -1,5 +1,5 @@
-#Author: Issam Chaaraddine
 #Weekly task 5
+#Author: Issam Chaaraddine
 #Write a program that outputs whether or not today is a weekday.
 from datetime import date
 today = date.today()
