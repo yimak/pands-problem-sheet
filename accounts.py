@@ -18,4 +18,4 @@ numbershidden = totalnumbers - 4
 numbersshown = b[numbershidden:]
 #now we will multiply(*) X by the digits hidden named variable 'numbershidden' and will add(+) the visible digits or 'numbersshown'
 print("X" * numbershidden + numbersshown)
-#I remplaced 'x' by 'X' to see the difference when running both programms 
+#I remplaced 'x' by 'X' to see the difference when running both programms
