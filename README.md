@@ -54,15 +54,32 @@ For that we need to import date from datetime module, whih means that we will ha
 from datetime import date
 https://www.programiz.com/python-programming/datetime/current-datetime
 
-Now we will create a variable that will define the date:
+from datetime import date
+Date,date is an object that represents the actual Gregorian date. Every time an object is created a method (method is basically a function that belongs to an object) is called and it's named constructor, in this case we used the constructors today() and weekday(). 
+https://docs.python.org/3/library/datetime.html
+https://pythonbasics.org/constructor/
+https://docs.python.org/3/tutorial/classes.html#:~:text=A%20method%20is%20a%20function,%2C%20sort%2C%20and%20so%20on. (method defini)
+
+Now we will create a variable that will define the object date:
 today = date.today()
 
-I decided to use if -else statement combined with the boolean operator 'OR', so I included the 5 days of the week in the if statement next to the variable today and the == operator, that means that today's date will be True whenever the date assigns one of the days that go from Monday to Friday. 
+I decided to use if -else statement combined with the boolean operator 'OR', so I included the 5 days of the week in the if statement next to the variable today and added the constructor weekday(), weekday defines the days of the week assigning each day a number that go from 0 (Monday) to 6 (Sunday).
+Then I added the numbers next to the == operator, that means that today's date will be True whenever the number of the weekday is equal to one of the numbers I added which go from 0 to 4 (Mon - Fri)
 To define that it can be only one of these days I added the boolean operator OR:
 https://realpython.com/python-or-operator/#:~:text=In%20short%2C%20the%20Python%20or,regardless%20of%20its%20truth%20value.&text=In%20this%20example%2C%20the%20Python,how%20or%20works%20in%20Python.
 Then we added print() right after, that means that if any of these values is True, then the string that contains 'Yes, unfortunately today is a weekday.' will be printed.
 Otherwise, if all these values are False, then we would jump to -else statement, which could be Saturday or Sunday, we don't need to define those as we already defined the days Monday to Friday and any value that does not correspond to these will print the string 'It is the weekend, yay!'
-
+When I finished this program I realised that I could invert it to make it shorter, that means instead of assigning the five days of the week to a number, I could actually just assign Saturday to (5) and Sunday (6). That is:
+Instead of:
+if today.weekday()==0 or today.weekday()==1 or today.weekday()=2 or today.weekday()==3 or today.weekday()==4:
+    print('Yes, unfortunately today is a weekday')
+else:
+    print('It is the weekend, yay!')
+Better:
+if today.weekday()==5 or today.weekday()==6:
+    print('It is the weekend, yay!')
+else:
+    print('Yes, unfortunately today is a weekday')
 
 ## Author
 
