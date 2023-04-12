@@ -85,10 +85,6 @@ else:
 
 - [@yimak](https://www.github.com/yimak)
 
-<<<<<<< HEAD
-=======
-
-
 
 
 # Assignment 6: create a program named squareroot.py
@@ -132,4 +128,7 @@ The key for me to understand how it works was by adding <tt>print()</tt> right a
 3.8078866121102966
 3.8078865529319543
 3.8078865529319543 
->>>>>>> 60a656ad143bcc20560c29966b5f72f32765e6db
+
+## Author
+
+- [@yimak](https://www.github.com/yimak)
