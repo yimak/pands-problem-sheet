@@ -102,16 +102,16 @@ The first task was to search for the Newton Method to estimate a square root and
 We will assign a number to the variable N. N decribes the value we are trying to find the square root of, in this case 14.5:
 N=14.5
 Then we will assign a value to <tt>sqrt</tt>:
-<tt>sqrt</tt>: 1+N
+<tt>sqrt: 1+N</tt>
 We will create a variable called <tt>approx</tt>, this value can be any positive number, in this case I assigned it to 1. <tt>sqrt</tt> and approx must hold different values because they will be used in the while loop parameter as different in order to create a loop:
-<tt>approx</tt>=1
-If N is an integer, we would assign the formula to <tt>sqrt</tt> and print <tt>sqrt</tt>. But working with a float number makes it more complicated. 
+<tt>approx=1</tt>
+If N was an integer, we would assign the formula to <tt>sqrt</tt> and <tt>print(sqrt)</tt>. But working with a float number makes it more complicated. 
 The reason is that the number resulted from that formula is just an estimated number, but close to the exact square root of N. In order to get a lower tolerance, that is, a more accurate square root number, we will create a loop, so that everytime we get a value for <tt>sqrt</tt> we will run it through the same formula in a loop decreasing the tolerance of the square root number of N. 
 The loop will stop once <tt>sqrt</tt> and <tt>approx</tt> will have the same value with an accuracy of 0.0000000000000001 decimals.
 To create a loop I used while() loop statement: 
-while (squrt!approx):
+<tt>while (squrt!approx):</tt>
 then gave <tt>approx</tt> the same value that will result from calculating squrt:
-approx=squrt 
+<tt>approx=squrt</tt>
 Please bare in mind that this <tt>sqrt</tt> and <tt>approx</tt> created in the while loop statement are independent from the approx and squrt created outside and will represent different numbers.
 Approx will alwasys be equal to the value of <tt>sqrt</tt>, that is, approx will be equal to the last value that results from <tt>sqrt</tt>. 
 Now we will create the variable <tt>sqrt</tt> that will designate Newton's Method to estimate a square root:
