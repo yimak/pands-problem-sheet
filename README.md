@@ -109,6 +109,7 @@ The loop will stop once <tt>sqrt</tt> and <tt>approx</tt> will have the same val
 To create a loop I used while() loop statement: 
 <tt>while (squrt!approx):</tt>
 https://www.w3schools.com/python/python_while_loops.asp
+https://snakify.org/en/lessons/while_loop/
 then gave <tt>approx</tt> the same value that will result from calculating squrt:
 <tt>approx=squrt</tt>
 Please bare in mind that this <tt>sqrt</tt> and <tt>approx</tt> created in the while loop statement are independent from the approx and squrt created outside and will represent different numbers.
