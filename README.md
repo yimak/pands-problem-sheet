@@ -87,16 +87,34 @@ else:
 
 
 
-**Assignment 6: create a program named squareroot.py**
-Create a function called <tt>sqrt</tt> that takes a positive floating number and outputs an approximation of his square root This task should be done without using a built in function x ** or math.sqrt(x)
+
+# Assignment 6: create a program named squareroot.py
+
+Create a function called <tt>sqrt</tt> that takes a positive floating number and outputs an approximation of his square root
+This task should be done without using a built in function x ** or math.sqrt(x)
 
 The first task was to search for the Newton Method to estimate a square root and undertanding how the formula works.
+- Newton method calculates a square root using this formula:
+- root = 0.5 * (approx + (N / approx)) where approx is any guess which can be assumed to be 1 (a later explanation will follow once we create the program).
+ https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/  
 
-Newton method calculates a square root using this formula:
-root = 0.5 * (approx + (N / approx)) where approx is any guess which can be assumed to be 1 (a later explanation will follow once we create the program).
-https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
+We will assign a number to the variable N. N decribes the value we are trying to find the square root of, in this case 14.5:
+N=14.5
+We will create a variable called approx, this value can be any positive number, in this case I assigned it to 1.
+approx=1
+If N is an integer, we would assign the formula to sqrt and print sqrt. 
+But working with a float number makes it more complicated. 
+The number resulted from that formula is just an estimated number, but close to the exact square root of N. In order to get lower the tolerance and getting a more accurate square root number we will create a loop, so that everytime we get a value we will run it through the same formula in a loop decreasing the tolerance of the square root number of N. The loop will stop once sqrt and approx will have the same number with tolerance level 0.0000000000000001.
+To create a loop I used while() loop statement: 
+while (squrt!approx):
+then gave approx the same value that will result from calculating squrt:
+approx=squrt 
+Please bare in mind that this squr and approx created in the while loop statement are independent from the approx and squrt created outside and will represent different numbers.
+Approx will alwasys be equal to the value of sqrt, that is, approx will be equal to the last value that results from sqrt. 
+Now we will create the variable sqrt that will designate Newton's Method to estimate a square root:
+squrt=0.5 * (approx + (N / approx))
+As long as the result of sqrt is dfferent than approx, the loop will continue until sqrt and approx have the same value on a level of 0.0000000000000001 decimals. 
+Once we get there the loop will end and sqrt will be printed:
+print(sqrt) 
 
-We will assign a number to the variable N. N decribes the value we are trying to find the square root of, in this case 14.5: N=14.5 We will create a variable called approx, this value can be any positive number, in this case I assigned it to 1. approx=1 If N is an integer, we would assign the formula to sqrt and print sqrt. But working with a float number makes it more complicated. The number resulted from that formula is just an estimated number, but close to the exact square root of N. In order to get lower the tolerance and getting a more accurate square root number we will create a loop, so that everytime we get a value we will run it through the same formula in a loop decreasing the tolerance of the square root number of N. The loop will stop once sqrt and approx will have the same number with tolerance level 0.0000000000000001. To create a loop I used while() loop statement: while (squrt!approx): then gave approx the same value that will result from calculating squrt: approx=squrt Please bare in mind that this squr and approx created in the while loop statement are independent from the approx and squrt created outside and will represent different numbers. 
-Approx will alwasys be equal to the value of sqrt, that is, approx will be equal to the last value that results from sqrt. Now we will create the variable sqrt that will designate Newton's Method to estimate a square root: squrt=0.5 * (approx + (N / approx)) As long as the result of sqrt is dfferent than approx, the loop will continue until sqrt and approx have the same value on a level of 0.0000000000000001 decimals. 
-Once we get there the loop will end and sqrt will be printed: 
-print(sqrt)
+
