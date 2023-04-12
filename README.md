@@ -110,6 +110,7 @@ The reason is that the number resulted from that formula is just an estimated nu
 The loop will stop once <tt>sqrt</tt> and <tt>approx</tt> will have the same value with an accuracy of 0.0000000000000001 decimals.
 To create a loop I used while() loop statement: 
 <tt>while (squrt!approx):</tt>
+https://www.w3schools.com/python/python_while_loops.asp
 then gave <tt>approx</tt> the same value that will result from calculating squrt:
 <tt>approx=squrt</tt>
 Please bare in mind that this <tt>sqrt</tt> and <tt>approx</tt> created in the while loop statement are independent from the approx and squrt created outside and will represent different numbers.
