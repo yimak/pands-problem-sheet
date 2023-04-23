@@ -141,7 +141,8 @@ Write a program that reads in a text file and outputs the number of e's it conta
 To understand this assignment I had to make a research on how to read files from a command argument, this article provides all the necessary information on how import sys works:
 https://www.pythonforbeginners.com/system/python-sys-argv
 https://www.knowledgehut.com/blog/programming/sys-argv-python-examples
-once we understand that argv.sys stores the arguments and file name that we want to read we start creting our program:
+https://stackoverflow.com/questions/8280250/how-to-open-files-given-as-command-line-arguments-in-python
+once we understand that argv.sys stores the arguments and file name that we want to read we start creating our program:
 import sys
 sys.argv[1] = my_file 
 the first element that sys.argv[0] will read is the script itself, the reason why we will write it at index 1, remember that the arguments in the command line will follow this order:
