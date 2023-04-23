@@ -132,3 +132,32 @@ The key for me to understand how it works was by adding <tt>print()</tt> right a
 ## Author
 
 - [@yimak](https://www.github.com/yimak)
+
+# Assignment 7: create a program named es.py
+
+Write a program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.
+
+To understand this assignment I had to make a research on how to read files from a command argument, this article provides all the necessary information on how import sys works:
+https://www.pythonforbeginners.com/system/python-sys-argv
+https://www.knowledgehut.com/blog/programming/sys-argv-python-examples
+once we understand that argv.sys stores the arguments and file name that we want to read we start creting our program:
+import sys
+sys.argv[1] = my_file 
+the first element that sys.argv[0] will read is the script itself, the reason why we will write it at index 1, remember that the arguments in the command line will follow this order:
+python es.py tiktok.txt
+Now we need to find a function to open and close the file, python has two build-in fucntions:
+https://www.w3schools.com/python/python_file_open.asp 
+After some research I found an elegant way to open and close files using the with statement:
+with open(sys.argv[1]) as my_file:
+https://builtin.com/software-engineering-perspectives/what-is-with-statement-python
+Apart of opening and closing the file, we need to read the file, that's why we will use read(). I have to recognize that this method has been added to the script after finishing it, I was getting value 0 when running the script:
+text=my_file.read() 
+Now we will wwork on the second part of the task, which is counting the number of times the letter "e" will appear in our text:
+https://www.programiz.com/python-programming/if-elif-else#:~:text=The%20syntax%20of%20if%20statement,body%20of%20if%20is%20skipped.
+For that we will use the for loops combined with an if statement, basically each time we have the letter "e" in my_file the body count will add one.  
+count=0
+    for letter in my_file:
+        if letter == "e":
+            count += 1
+Of course at the end we need to print count, wich will represent be the number of times "e" appears in the text.
+Something that is very important to mention is, the document added should be added to the same directory where the script iis running.
