@@ -10,7 +10,3 @@ plt.title("My Chart")
 plt.plot(xpoint,ypoint,color='red', label='plotfunction')
 plt.legend()
 plt.show()
-
-
-
-
