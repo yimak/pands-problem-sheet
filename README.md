@@ -48,20 +48,22 @@ Because 1€ is 100 cents. We would just need to add n_1+n_2 and divide by 100.
 #The program should read in a 10 character account number and outputs the account number with only the last 4 digits
 replace first 6 digits with 'x'
 
-First we will create a string that will read 'please enter a 10 digit number' using a built-in input() function
+First we will create a string that will read 'please enter a 10 digit number' using a built-in input() function:
 #the input() function was taken from the previous lecture
 a = str(input('Please enter a 10 digit account number: '))
-We will use the slicing method to show only the last 4 digits starting to count from the right by putting -4 followed by two dots. 
+We will use the slicing method to show only the last 4 digits starting to count from the right by putting -4 followed by two dots: 
 numbersshown1 = a[-4:]
+
 https://stackoverflow.com/questions/7983820/get-the-last-4-characters-of-a-string
 https://docs.python.org/3/reference/expressions.html#
-we will replace the values in string '123456' by 'xxxxxx' by multiplying 'X' by 6 and adding the value resulting from leaving the last four digits of value a. 
+
+We will replace the values in string '123456' by 'xxxxxx' by multiplying 'X' by 6 and adding the value resulting from leaving the last four digits of value a: 
 numbershidden1 = 'X' * 6 + numbersshown1 
 print(numbershidden1)
 
-#extra, modify the program to deal with account numbers of any length
-First we will create a string that will read 'please enter the digits of your account number' using a built-in input() function
-Then we will measure the length of 'a' by using len() function
+#extra, modify the program to deal with account numbers of any length.
+First we will create a string that will read 'please enter the digits of your account number' using a built-in input() function.
+Then we will measure the length of 'a' by using len() function:
 totalnumbers = len(a)
 We will create a variable 'numbershidden', it will represent all the numbers (that is, of any length) except for the 4 last digits:
 numbershidden = totalnumbers - 4
