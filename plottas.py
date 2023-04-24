@@ -6,6 +6,7 @@ plt.hist(data,edgecolor='white')
 #now we will create a plot of the function  h(x)=x3 in the range [0, 10]
 xpoint=np.random.normal(range(0,10))
 ypoint= xpoint ** 3
+plt.title("My Chart")
 plt.plot(xpoint,ypoint,color='red', label='plotfunction')
 plt.legend()
 plt.show()
