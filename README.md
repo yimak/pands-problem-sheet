@@ -170,6 +170,7 @@ The key for me to understand how it works was by adding <tt>print()</tt> right a
 
 - [@yimak](https://www.github.com/yimak)
 
+
 # Assignment 7: create a program named es.py
 
 Write a program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.
@@ -199,3 +200,38 @@ count=0
             count += 1
 Of course at the end we need to print count, wich will represent be the number of times "e" appears in the text.
 Something that is very important to mention is, the document added should be added to the same directory where the script iis running.
+
+## Author
+
+- [@yimak](https://www.github.com/yimak)
+
+
+
+# Assignment 8: Create a program named plottask.py
+This program should display a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2.
+And a plot of the function h(x)=x3 in the range [0, 10], 
+on the one set of axes.
+
+First we will import numpy and matplotlib and will assign them to np and plt respectively:
+import numpy as np
+import matplotlib.pyplot as plt
+Through the article logistic distribution in W3Schools we could find a script to create a histogram with the 1000 values (size) , mean=5 (that is, loc), and standard deviation(scale) of 2:
+https://www.w3schools.com/python/numpy/numpy_random_logistic.asp
+data = np.random.normal(loc=5, scale=2, size=1000)
+Now ewe will create the a plot of the function  h(x)=x3 in the range [0, 10], becasue the range is so small, the line will be dashed. But the more we increase the range the line the more the line will look continuous: 
+xpoint=np.random.normal(range(0,10))
+ypoint= xpoint ** 3
+I didn't add a reference for this part because I used the lecture as a reference. I just assigned Y axis to X cubed and assigned the range to the X axis.
+
+To make my presentation more clear, I changed the colour of the plot, added a legend, and separated the bars by adding the edges a white colour:
+plt.hist(data,edgecolor='white')
+plt.plot(xpoint,ypoint,color='red', label='plotfunction')
+https://stackoverflow.com/questions/70416097/adding-data-labels-ontop-of-my-histogram-python-matplotlib
+
+This task was very straight forward, most of the points have been treated in the lectures, the reason why I didn't add many references.
+
+## Author
+
+- [@yimak](https://www.github.com/yimak)
+
+
