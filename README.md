@@ -43,6 +43,40 @@ Because 1€ is 100 cents. We would just need to add n_1+n_2 and divide by 100.
 
 
 
+# Assignment 3: Create a program called accounts.py 
+
+#The program should read in a 10 character account number and outputs the account number with only the last 4 digits
+replace first 6 digits with 'x'
+
+First we will create a string that will read 'please enter a 10 digit number' using a built-in input() function
+#the input() function was taken from the previous lecture
+a = str(input('Please enter a 10 digit account number: '))
+We will use the slicing method to show only the last 4 digits starting to count from the right by putting -4 followed by two dots. 
+numbersshown1 = a[-4:]
+https://stackoverflow.com/questions/7983820/get-the-last-4-characters-of-a-string
+https://docs.python.org/3/reference/expressions.html#
+we will replace the values in string '123456' by 'xxxxxx' by multiplying 'X' by 6 and adding the value resulting from leaving the last four digits of value a. 
+numbershidden1 = 'X' * 6 + numbersshown1 
+print(numbershidden1)
+
+#extra, modify the program to deal with account numbers of any length
+First we will create a string that will read 'please enter the digits of your account number' using a built-in input() function
+Then we will measure the length of 'a' by using len() function
+totalnumbers = len(a)
+We will create a variable 'numbershidden', it will represent all the numbers (that is, of any length) except for the 4 last digits:
+numbershidden = totalnumbers - 4
+Now a variable 'numbersshown'  that will make a shallow copy of the array and will be showing all numbers that are not included in 'numbershidden'
+numbersshown = b[numbershidden:]
+Now we will multiply(*) X by the digits hidden named 'numbershidden' and will add(+) the visible digits or 'numbersshown'
+print("X" * numbershidden + numbersshown)
+
+
+## Author
+
+- [@yimak](https://www.github.com/yimak)
+
+
+
 # Assignment 5: Create a program named weekday.py 
 Write a program that outputs whether or not today is a weekday.
 If weekday, program will output 'Yes, unfortunately today is a weekday.'
