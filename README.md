@@ -63,7 +63,7 @@ We will replace the values in string <tt>'123456'</tt> by <tt>'xxxxxx'</tt> by m
 
 #extra, modify the program to deal with account numbers of any length.
 First we will create a string that will read <tt>'please enter the digits of your account number'</tt> using a built-in <tt>input()</tt> function.
-Then we will measure the length of 'a' by using <tt>len() function:
+Then we will measure the length of 'a' by using <tt>len()</tt> function:
 <tt>totalnumbers = len(a)</tt>
 We will create a variable <tt>numbershidden</tt>, it will represent all the numbers (that is, of any length) except for the 4 last digits:
 <tt>numbershidden = totalnumbers - 4</tt>
@@ -132,7 +132,7 @@ Then I added the numbers next to the <tt>==</tt> operator, that means that today
 To define that it can be only one of these days I added the boolean operator <tt>OR</tt>:
 https://realpython.com/python-or-operator/#:~:text=In%20short%2C%20the%20Python%20or,regardless%20of%20its%20truth%20value.&text=In%20this%20example%2C%20the%20Python,how%20or%20works%20in%20Python.
 Then we added <tt>print()</tt> right after, that means that if any of these values is <tt>True</tt>, then the string that contains <tt>'Yes, unfortunately today is a weekday.'</tt> will be printed.
-Otherwise, if all these values are <tt>False, then we would jump to <tt>-else</tt> statement, which could be Saturday or Sunday, we don't need to define those as we already defined the days Monday to Friday and any value that does not correspond to these will print the string <tt>'It is the weekend, yay!'</tt>
+Otherwise, if all these values are <tt>False</tt>, then we would jump to <tt>-else</tt> statement, which could be Saturday or Sunday, we don't need to define those as we already defined the days Monday to Friday and any value that does not correspond to these will print the string <tt>'It is the weekend, yay!'</tt>
 When I finished this program I realised that I could invert it to make it shorter, that means instead of assigning the five days of the week to a number, I could actually just assign Saturday to (5) and Sunday (6). That is:
 Instead of:
 <tt>if today.weekday()==0 or today.weekday()==1 or today.weekday()=2 or today.weekday()==3 or today.weekday()==4:</tt>
