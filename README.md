@@ -236,7 +236,7 @@ Something that is very important to mention is, the document added should be add
 
 
 
-# **Assignment 8: Create a program named <tt>plottask.py</tt> **
+# Assignment 8: Create a program named <tt>plottask.py</tt>
 This program should display a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2.
 And a plot of the function h(x)=x3 in the range [0, 10], 
 on the one set of axes.
