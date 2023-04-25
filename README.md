@@ -78,6 +78,35 @@ print("X" * numbershidden + numbersshown)
 - [@yimak](https://www.github.com/yimak)
 
 
+#   Assignment 4: create a program called collatz.py
+#write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
+#At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
+
+First we started this assignmnent by creating an input function, the value introduced after the sentence should be an integer int() because we will be conducting math calculations, which can be only done using integers.  
+number=int(input('Please enter a positive integer:'))
+
+Because we need to do the same calculation on a loop, we used a while function: 
+while number > 1:
+The loop will continue until number reaches 1, once there, the function would then print:
+print("at the end the value is ",number)
+Now we will settle a rule for our loop using if else statement learned in the lecture. So each time number's remainder is 0 (that is, an even number) we will divide by two. 
+For that we had to find a way to separate even from odd numbers and we used modulo operator:
+https://www.tutorialspoint.com/python-program-to-split-the-even-and-odd-elements-into-two-different-lists#:~:text=Step%201%20%3A%20create%20a%20user,add%20to%20the%20odd%20list.
+https://realpython.com/python-modulo-operator/
+
+Any other number that resulted from the loop right before divided by 2 that has a different remainder than 0 (!=0) should be multiplied by 3 plus 1: 
+
+if(number%2) == 0:
+      number = number/2 
+else number = number*3+1
+
+Then we add print() to print out each value that resulted from each loop. To print out the values next to each other I used end='' 
+https://pythonhow.com/how/print-without-a-newline-or-space-in-python/#:~:text=To%20print%20without%20a%20newline%20or%20space%20in%20Python%2C%20you,of%20the%20default%20newline%20character.&text=This%20will%20produce%20the%20same%20output%20as%20the%20previous%20examples.
+
+## Author
+
+- [@yimak](https://www.github.com/yimak)
+
 
 # Assignment 5: Create a program named weekday.py 
 Write a program that outputs whether or not today is a weekday.
