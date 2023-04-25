@@ -127,7 +127,7 @@ https://docs.python.org/3/tutorial/classes.html#:~:text=A%20method%20is%20a%20fu
 Now we will create a variable that will define the object date:
 <tt>today = date.today()</tt>
 
-I decided to use <tt>if -else statement combined with the boolean operator <tt>'OR'</tt>, so I included the 5 days of the week in the if statement next to the variable today and added the constructor <tt>weekday()</tt>, <tt>weekday</tt> defines the days of the week assigning each day a number that go from 0 (Monday) to 6 (Sunday).
+I decided to use <tt>if -else</tt> statement combined with the boolean operator <tt>'OR'</tt>, so I included the 5 days of the week in the if statement next to the variable today and added the constructor <tt>weekday()</tt>, <tt>weekday</tt> defines the days of the week assigning each day a number that go from 0 (Monday) to 6 (Sunday).
 Then I added the numbers next to the <tt>==</tt> operator, that means that today's date will be <tt>True</tt> whenever the number of the weekday is equal to one of the numbers I added which go from 0 to 4 (Mon - Fri)
 To define that it can be only one of these days I added the boolean operator <tt>OR</tt>:
 https://realpython.com/python-or-operator/#:~:text=In%20short%2C%20the%20Python%20or,regardless%20of%20its%20truth%20value.&text=In%20this%20example%2C%20the%20Python,how%20or%20works%20in%20Python.
@@ -184,7 +184,7 @@ Now we will create the variable <tt>sqrt</tt> that will designate Newton's Metho
 As long as the result of <tt>sqrt</tt> is dfferent than <tt>approx</tt>, the loop will continue until <tt>sqrt</tt> and <tt>approx</tt> have the same value on a level of 0.0000000000000001 decimals. 
 By defining a new parameter <tt>if</tt> <tt>continue</tt> once both values are equal the loop will end and <tt>sqrt</tt> will be printed:
 <tt>print(sqrt)</tt> 
-I afterwards realised that by taking out <tt>if</tt> <tt>continue</tt> the result would still print, I guess any exception to <tt>approx!=sqrt will pass the loop and get printed. 
+I afterwards realised that by taking out <tt>if</tt> <tt>continue</tt> the result would still print, I guess any exception to <tt>approx!=sqrt</tt> will pass the loop and get printed. 
 This assignment took me a while to understand, especially the way <tt>while()</tt>  operated. 
 The key for me to understand how it works was by adding <tt>print()</tt> right after <tt>approx=sqrt</tt>, this way I could see how the function works and the result of each loop:
 2
