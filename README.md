@@ -15,7 +15,7 @@ This assignment was very straight forward. But I have to mention that getting th
 <tt>$ alias python=/usr/bin/python3.9.6</tt>
 then checked the version again: 
 <tt>$ python --version</tt>
-<tt>Python 3.9.6</tt>
+Python 3.9.6
 It works!
 
 
@@ -31,7 +31,7 @@ a.-The program will prompt the user and read in two money amounts (in cent).
 b.-Add the two amounts.
 c.-Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount. 
 I assigned <tt>n_1</tt> to the first amount (65) and <tt>n_2</tt> to the second amount (180). 
-In order to make it prompt I used the function <tt>input()</tt> and put between quotation marks <tt>"amount 1: "</tt> and <tt>"amount 2: "</tt> respectively that will propmt to introduce the amounts. It was necessary to leave a space after the two points to have a space between the number and the two points once we introduce the number.
+In order to make it prompt I used the function <tt>input()</tt> and put between quotation marks <tt>amount 1: </tt> and <tt>amount 2: </tt> respectively that will propmt to introduce the amounts. It was necessary to leave a space after the two points to have a space between the number and the two points once we introduce the number.
 I was looking for a way to show the word "cents" after adding the amount but it didn't work, I decided to add a new command print <tt>print(f'{n_1} cent')</tt> after <tt>input()</tt>. In this task I also decided to try f-string, I believe this makes the syntax more elegant than using <tt>print(int(n_1), 'cent')</tt>
 Because 1€ is 100 cents. We would just need to add <tt>n_1+n_2</tt> and divide by 100. 
 
@@ -49,7 +49,7 @@ Because 1€ is 100 cents. We would just need to add <tt>n_1+n_2</tt> and divide
 replace first 6 digits with 'x'
 
 First we will create a string that will read <tt>'please enter a 10 digit number'</tt> using a built-in <tt>input()</tt> function:
-#the <tt>input()</tt> function was taken from the previous lecture
+The <tt>input()</tt> function was taken from the previous lecture.
 <tt>a = str(input('Please enter a 10 digit account number: '))</tt>
 We will use the slicing method to show only the last 4 digits starting to count from the right by putting -4 followed by two dots: 
 <tt>numbersshown1 = a[-4:]</tt>
